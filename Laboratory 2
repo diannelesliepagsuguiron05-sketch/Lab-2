@@ -1,32 +1,21 @@
-# Lab 2: User Input and Logic Operations
+print("--- Simple Addition ---")
+x = input("First value: ")
+y = input("Second value: ")
 
-def run_lab_activities():
-    print("--- Smart Calculator ---")
-    # Using input() with float conversion to handle all number types
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    
-    result = num1 + num2
-    # Displaying formatted output using f-strings for precision
-    print(f"The sum of {num1} and {num2} is: {result:.2f}\n")
+# Convert and calculate in one go
+total = float(x) + float(y)
+print(f"Combined Result: {total}")
 
-    print("--- Average Calculator ---")
-    val1 = float(input("Value A: "))
-    val2 = float(input("Value B: "))
-    
-    average = (val1 + val2) / 2
-    print(f"The computed average is: {average}\n")
+print("\n--- Mean Value Finder ---")
+val_a = float(input("Input A: "))
+val_b = float(input("Input B: "))
 
-    print("--- Grade Evaluator ---")
-    # Pass or Fail System
-    score = float(input("Enter student grade: "))
-    
-    if score >= 75:
-        status = "PASSED"
-    else:
-        status = "FAILED"
-    
-    print(f"Result: {status}\n")
+avg = (val_a + val_b) / 2
+print(f"The average is exactly {avg}")
 
-if __name__ == "__main__":
-    run_lab_activities()
+print("\n--- Academic Standing ---")
+score = float(input("Enter numerical grade: "))
+
+# Logic for Pass/Fail status
+status = "PASSED" if score >= 75 else "FAILED"
+print(f"Final Status: {status}")
