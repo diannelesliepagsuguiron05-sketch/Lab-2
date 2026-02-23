@@ -1,9 +1,9 @@
 print("--- Simple Addition ---")
-x = input("First value: ")
-y = input("Second value: ")
+num1 = input("First value: ")
+num2 = input("Second value: ")
 
 # Convert and calculate in one go
-total = float(x) + float(y)
+total = float(num1) + float(num2)
 print(f"Combined Result: {total}")
 
 print("\n--- Mean Value Finder ---")
